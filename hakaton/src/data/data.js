@@ -1,224 +1,224 @@
-const data = 
-{
-    "Region": [
-        {
-          "id": 1,
-          "name": "GrandEst",
-          "url": "http://images.innoveduc.fr/php_parcours/cp2/chocolate.png",
-          "desc": "Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression."
-        },
-        {
-            "id": 2,
-            "name": "IleDeFrance",
-            "url": "http://images.innoveduc.fr/php_parcours/cp2/chocolate.png",
-            "des": "Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression."
-        },
-        {
-            "id": 3,
-            "name": "Bretagne",
-            "url": "http://images.innoveduc.fr/php_parcours/cp2/chocolate.png",
-            "des": "Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression."
-        },
-        {
-            "id": 4,
-            "name": "ProvenceAlpesCoteDazur",
-            "url": "http://images.innoveduc.fr/php_parcours/cp2/chocolate.png",
-            "des": "Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression."
-        },],
-        "Touristique":[ 
-            {
-              "id": 1,
-              "id_Region": 1,
-              "categorie": "eglise",
-              "name": "cathedrale tkt",
-              "url": "http://images.innoveduc.fr/php_parcours/cp2/cherry.png",
-              "desc": "Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression."
-            },
-            {
-                "id": 1,
-                "id_Region": 1,
-                "categorie": "musee",
-                "name": "musee du",
-                "url": "http://images.innoveduc.fr/php_parcours/cp2/cherry.png",
-                "desc": "Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression."
-            },
-            {
-                "id": 1,
-                "id_Region": 1,
-                "categorie": "monument",
-                "name": "monument der",
-                "url": "http://images.innoveduc.fr/php_parcours/cp2/cherry.png",
-                "desc": "Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression."
-            },
-            {
-                "id": 1,
-                "id_Region": 1,
-                "categorie": "siteNaturel",
-                "name": "park bio",
-                "url": "http://images.innoveduc.fr/php_parcours/cp2/cherry.png",
-                "desc": "Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression."
-            },
-            {
-                "id": 1,
-                "id_Region": 1,
-                "categorie": "eglise",
-                "name": "cathedrale tkt",
-                "url": "http://images.innoveduc.fr/php_parcours/cp2/cherry.png",
-                "desc": "Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression."
-              },
-              {
-                "id": 1,
-                "id_Region": 1,
-                "categorie": "eglise",
-                "name": "cathedrale tkt",
-                "url": "http://images.innoveduc.fr/php_parcours/cp2/cherry.png",
-                "desc": "Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression."
-              },
-              {
-                "id": 1,
-                "id_Region": 2,
-                "categorie": "eglise",
-                "name": "cathedrale tkt",
-                "url": "http://images.innoveduc.fr/php_parcours/cp2/cherry.png",
-                "desc": "Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression."
-              },
-              {
-                "id": 1,
-                "id_Region": 2,
-                "categorie": "eglise",
-                "name": "cathedrale tkt",
-                "url": "http://images.innoveduc.fr/php_parcours/cp2/cherry.png",
-                "desc": "Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression."
-              },
-              {
-                "id": 1,
-                "id_Region": 2,
-                "categorie": "eglise",
-                "name": "cathedrale tkt",
-                "url": "http://images.innoveduc.fr/php_parcours/cp2/cherry.png",
-                "desc": "Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression."
-              },
-              {
-                "id": 1,
-                "id_Region": 2,
-                "categorie": "eglise",
-                "name": "cathedrale tkt",
-                "url": "http://images.innoveduc.fr/php_parcours/cp2/cherry.png",
-                "desc": "Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression."
-              },
-              {
-                "id": 1,
-                "id_Region": 2,
-                "categorie": "eglise",
-                "name": "cathedrale tkt",
-                "url": "http://images.innoveduc.fr/php_parcours/cp2/cherry.png",
-                "desc": "Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression."
-              },
-              {
-                "id": 1,
-                "id_Region": 2,
-                "categorie": "eglise",
-                "name": "cathedrale tkt",
-                "url": "http://images.innoveduc.fr/php_parcours/cp2/cherry.png",
-                "desc": "Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression."
-              },
-              {
-                "id": 1,
-                "id_Region": 1,
-                "categorie": "eglise",
-                "name": "cathedrale tkt",
-                "url": "http://images.innoveduc.fr/php_parcours/cp2/cherry.png",
-                "desc": "Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression."
-              },
-              {
-                "id": 1,
-                "id_Region": 3,
-                "categorie": "eglise",
-                "name": "cathedrale tkt",
-                "url": "http://images.innoveduc.fr/php_parcours/cp2/cherry.png",
-                "desc": "Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression."
-              },
-              {
-                "id": 1,
-                "id_Region": 3,
-                "categorie": "eglise",
-                "name": "cathedrale tkt",
-                "url": "http://images.innoveduc.fr/php_parcours/cp2/cherry.png",
-                "desc": "Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression."
-              },
-              {
-                "id": 1,
-                "id_Region": 3,
-                "categorie": "eglise",
-                "name": "cathedrale tkt",
-                "url": "http://images.innoveduc.fr/php_parcours/cp2/cherry.png",
-                "desc": "Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression."
-              },
-              {
-                "id": 1,
-                "id_Region": 3,
-                "categorie": "eglise",
-                "name": "cathedrale tkt",
-                "url": "http://images.innoveduc.fr/php_parcours/cp2/cherry.png",
-                "desc": "Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression."
-              },
-              {
-                "id": 1,
-                "id_Region": 3,
-                "categorie": "eglise",
-                "name": "cathedrale tkt",
-                "url": "http://images.innoveduc.fr/php_parcours/cp2/cherry.png",
-                "desc": "Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression."
-              },
-              {
-                "id": 1,
-                "id_Region": 3,
-                "categorie": "eglise",
-                "name": "cathedrale tkt",
-                "url": "http://images.innoveduc.fr/php_parcours/cp2/cherry.png",
-                "desc": "Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression."
-              },
-              {
-                "id": 1,
-                "id_Region": 1,
-                "categorie": "eglise",
-                "name": "cathedrale tkt",
-                "url": "http://images.innoveduc.fr/php_parcours/cp2/cherry.png",
-                "desc": "Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression."
-              },
-              {
-                "id": 1,
-                "id_Region": 1,
-                "categorie": "eglise",
-                "name": "cathedrale tkt",
-                "url": "http://images.innoveduc.fr/php_parcours/cp2/cherry.png",
-                "desc": "Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression."
-              },
-              {
-                "id": 1,
-                "id_Region": 1,
-                "categorie": "eglise",
-                "name": "cathedrale tkt",
-                "url": "http://images.innoveduc.fr/php_parcours/cp2/cherry.png",
-                "desc": "Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression."
-              },
-              {
-                "id": 1,
-                "id_Region": 1,
-                "categorie": "eglise",
-                "name": "cathedrale tkt",
-                "url": "http://images.innoveduc.fr/php_parcours/cp2/cherry.png",
-                "desc": "Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression."
-              },
-              {
-                "id": 1,
-                "id_Region": 1,
-                "categorie": "eglise",
-                "name": "cathedrale tkt",
-                "url": "http://images.innoveduc.fr/php_parcours/cp2/cherry.png",
-                "desc": "Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression."
-              },]
-    
-}
+const data = {
+  Region: [
+    {
+      id: 1,
+      name: "GrandEst",
+      url: "https://images.pexels.com/photos/2901212/pexels-photo-2901212.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+      desc: "De grands espaces naturels propices au ressourcement ou aux vacances actives, des lieux patrimoniaux et culturels prestigieux, des savoir-faire ancestraux, une gastronomie réputée dans le monde entier… le Grand Est vous promet une évasion totale en plein cœur de l’Europe.",
+    },
+    {
+      id: 2,
+      name: "IleDeFrance",
+      url: "https://images.pexels.com/photos/3105066/pexels-photo-3105066.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+      des: "Si l'histoire et la culture vous passionne, vous allez être gâté durant votre séjour en Île-de-France. Cette région est riche en histoire et en culture comme en témoigne ses nombreux châteaux et monuments. Parmi les plus important, il y a le célèbre château de Versailles. C'est l'un des monuments phares de la France.",
+    },
+    {
+      id: 3,
+      name: "Bretagne",
+      url: "https://www.studyrama.com/sites/default/files/styles/hero_article_big/public/article/2022-06/arton106090.jpg.webp?itok=Avogm1yx",
+      des: "La Bretagne possède de nombreux atouts : une attractivité touristique forte et des patrimoines remarquables et variés (églises et chapelles, mégalithes, héritages maritimes, biens archéologiques, canaux et voies d’eaux intérieures…)",
+    },
+    {
+      id: 4,
+      name: "ProvenceAlpesCoteDazur",
+      url: "https://images.pexels.com/photos/7166574/pexels-photo-7166574.jpeg",
+      des: "Une vaste région, comme le laisse supposer son nom à rallonge. Le PACA regroupe quelques-unes des régions les plus attractives de France, que ce soit pour le soleil, la mer, la gastronomie, la nature... Il y a la Provence, ses villages, sa garrigue et ses accents chantants, la Côte d'Azur, ses stations balnéaires, ses paillettes et ses îles, et les Alpes du Sud, leurs parcs naturels et ce littoral découpé et spectaculaire : une vaste région que le PACA, mais aussi un vrai dépaysement dans son propre pays !",
+    },
+  ],
+  Touristique: [
+    {
+      id: 1,
+      id_Region: 1,
+      categorie: "eglise",
+      name: "Basilique Notre-Dame de la Garde",
+      url: "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/26/e2/de/ac/interno.jpg?w=1400&h=-1&s=1",
+      desc: "La Basilique Notre-Dame de la Garde est une icône Marseillaise. De son perchoir, elle veille sur le port et la ville. Visitez la Basilique pour une vue imprenable sur Marseille et faites un tour au Musée d’Art Sacré pour en apprendre plus sur l’histoire de ce site historique.",
+    },
+    {
+      id: 1,
+      id_Region: 1,
+      categorie: "musee",
+      name: "musee du",
+      url: "http://images.innoveduc.fr/php_parcours/cp2/cherry.png",
+      desc: "Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression.",
+    },
+    {
+      id: 1,
+      id_Region: 1,
+      categorie: "monument",
+      name: "monument der",
+      url: "http://images.innoveduc.fr/php_parcours/cp2/cherry.png",
+      desc: "Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression.",
+    },
+    {
+      id: 1,
+      id_Region: 1,
+      categorie: "siteNaturel",
+      name: "park bio",
+      url: "http://images.innoveduc.fr/php_parcours/cp2/cherry.png",
+      desc: "Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression.",
+    },
+    {
+      id: 1,
+      id_Region: 1,
+      categorie: "eglise",
+      name: "cathedrale tkt",
+      url: "http://images.innoveduc.fr/php_parcours/cp2/cherry.png",
+      desc: "Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression.",
+    },
+    {
+      id: 1,
+      id_Region: 1,
+      categorie: "eglise",
+      name: "cathedrale tkt",
+      url: "http://images.innoveduc.fr/php_parcours/cp2/cherry.png",
+      desc: "Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression.",
+    },
+    {
+      id: 1,
+      id_Region: 2,
+      categorie: "eglise",
+      name: "cathedrale tkt",
+      url: "http://images.innoveduc.fr/php_parcours/cp2/cherry.png",
+      desc: "Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression.",
+    },
+    {
+      id: 1,
+      id_Region: 2,
+      categorie: "eglise",
+      name: "cathedrale tkt",
+      url: "http://images.innoveduc.fr/php_parcours/cp2/cherry.png",
+      desc: "Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression.",
+    },
+    {
+      id: 1,
+      id_Region: 2,
+      categorie: "eglise",
+      name: "cathedrale tkt",
+      url: "http://images.innoveduc.fr/php_parcours/cp2/cherry.png",
+      desc: "Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression.",
+    },
+    {
+      id: 1,
+      id_Region: 2,
+      categorie: "eglise",
+      name: "cathedrale tkt",
+      url: "http://images.innoveduc.fr/php_parcours/cp2/cherry.png",
+      desc: "Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression.",
+    },
+    {
+      id: 1,
+      id_Region: 2,
+      categorie: "eglise",
+      name: "cathedrale tkt",
+      url: "http://images.innoveduc.fr/php_parcours/cp2/cherry.png",
+      desc: "Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression.",
+    },
+    {
+      id: 1,
+      id_Region: 2,
+      categorie: "eglise",
+      name: "cathedrale tkt",
+      url: "http://images.innoveduc.fr/php_parcours/cp2/cherry.png",
+      desc: "Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression.",
+    },
+    {
+      id: 1,
+      id_Region: 3,
+      categorie: "monument",
+      name: "Les alignements de Carnac",
+      url: "https://www.bretagne.com/sites/default/files/inline-images/alignement-de-carnac-menhir-bretagne.jpg",
+      desc: "La plupart des visiteurs viennent pour les alignements de Kermario et du Ménec. L’alignement de Kermario comporte les plus gros menhirs de Carnac. Ces imposants blocs de granit font toujours leur effet en photos ! Le Géant du Manio qui s’y trouve est un menhir de 6 mètres de hauteur qui vaut largement le coup d'œil. ",
+    },
+    {
+      id: 1,
+      id_Region: 3,
+      categorie: "eglise",
+      name: "Cathédrale Saint-Corentin",
+      url: "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/13/c6/1b/f4/cathedrale-st-corentin.jpg?w=1400&h=-1&s=1",
+      desc: "Sur le site d'édifices antérieurs des IXème et XIème siècles, sa construction fut décidée en 1239 par l'évêque Rainaud, chancelier ducal de Pierre de Dreux, venu d'Ile de France. C'est le temps du gothique rayonnant, celui des chantiers où se reconstruisent Chartres, Reims ou Amiens. L'entreprise ambitieuse de Quimper part du choeur qui incorpore à son chevet la chapelle extérieure de Notre-Dame de la Victoire. Elle est freinée par les misères du XIVème, guerres de succession et épidémies, où s'édifie seulement le collatéral sud.",
+    },
+    {
+      id: 1,
+      id_Region: 3,
+      categorie: "site naturel",
+      name: "Parc du Thabor",
+      url: "https://www.tourisme-rennes.com/uploads/2022/10/parc-du-thabor-franck-hamon-3963.jpg",
+      desc: "Le parc du Thabor, situé à proximité du centre-ville de Rennes dans le département français d'Ille-et-Vilaine en région Bretagne, est un parc public aménagé sur plus de dix hectares dont la particularité est de mêler un jardin à la française, un jardin à l’anglaise et un important jardin botanique. Son nom fait référence à une montagne dominant le lac de Tibériade en Israël, le mont Thabor.",
+    },
+    {
+      id: 1,
+      id_Region: 3,
+      categorie: "monument",
+      name: "Domaine de Suscinio",
+      url: "https://medias0.morbihan.com/1900x1000/3c734370-1a9d-48f6-9afd-464b62820a9e/domaine%20de%20suscinio%20-%20rabouan.jpg",
+      desc: "Le château de Suscinio, résidence des ducs de Bretagne, se dresse au bord de l'océan Atlantique dans la commune de Sarzeau, au cœur de ce qui était autrefois un vaste espace boisé. Construit à la fin du Moyen Âge, il est situé dans la presqu'île de Rhuys, aujourd'hui formé de marais salants et de prairies.",
+    },
+    {
+      id: 1,
+      id_Region: 3,
+      categorie: "musee",
+      name: "Musée Départemental Breton",
+      url: "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/13/f4/a8/98/musee-departemental-breton.jpg?w=1400&h=-1&s=1",
+      desc: "Le musée départemental breton est installé depuis 1911 dans le Palais des Évêques de Cornouaille, le plus remarquable monument de Quimper après la cathédrale au sud de laquelle il est bâti. Deux ailes encadrent la Tour, construite pour Claude De Rohan (1507), l’un des plus beaux exemples architecturaux de la Renaissance en Bretagne. Il fut l’un des premiers musées en France, dès les années 1860-1870, à s’intéresser à l’ethnographie régionale et aux arts populaires. La collecte qui débuta alors, et qui se poursuit encore, fait de ce musée le principal conservatoire de l’histoire, de l’ethnographie et des arts régionaux du Finistère.",
+    },
+    {
+      id: 1,
+      id_Region: 3,
+      categorie: "site naturel",
+      name: "Golfe du Morbihan",
+      url: "https://cms.ffrandonnee.fr/data/CR05/images/sites%20incontournables/golfe-du-morbihan-renac-michel.jpg",
+      desc: "Là où l’océan s’aventure si loin au cœur des terres, le Parc naturel régional du Golfe du Morbihan demeure un espace ouvert aux influences multiples qui revendique avec fierté ses racines et sa culture. Inscrit au Club des plus belles baies du monde, le Golfe du Morbihan abrite une quarantaine d’îles blotties dans une petite mer intérieure de 5 km de large sur 21 km de long. Il s’ouvre sur l’Atlantique par un goulot d’un kilomètre de large situé entre Port-Navalo et Locmariaquer. Nichée au fond de la baie, la ville de Vannes est à 25 kilomètres de l’océan.",
+    },
+    {
+      id: 1,
+      id_Region: 4,
+      categorie: "musee",
+      name: "Citadelle de Saint-Tropez - Musée d'histoire maritime",
+      url: "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/10/d9/ed/19/citadelle-de-saint-tropez.jpg?w=2000&h=-1&s=1",
+      desc: "Situé dans une grande citadelle, ce musée évoque, de façon ludique, l’histoire maritime de la ville. Vous en apprendrez plus sur les époques où les Tropéziens partaient à la chasse des baleines, ou travaillaient avec l'Empire ottoman. Vous pourrez également profiter d’une vue panoramique sur Saint-Tropez.",
+    },
+    {
+      id: 1,
+      id_Region: 4,
+      categorie: "site naturel",
+      name: "Le Colorado provençal à Rustrel",
+      url: "https://resize-parismatch.lanmedia.fr/var/pm/public/media/image/2022/03/18/19/10-raisons-de-visiter-le-Colorado-provencal-de-Rustrel.jpg?VersionId=D7Ua4J_3ISN9kqmWUkJgMVnjVK3b0oMu",
+      desc: "Lové entre les montagnes du Luberon, au sud, et les monts du Vaucluse, au nord, le Colorado provençal est un site exceptionnel composé d’anciennes carrières d’ocre, à Rustrel. Ce haut lieu du pays d’Apt, conjuguant nature et patrimoine ocrier, dévoile une large palette de couleurs : du jaune vif au bordeaux, en passant par les tons orangés, parfois veinés de vert ou de bleu. Selon les zones, les spécialistes recensent pas moins de 25 tonalités différentes.",
+    },
+    {
+      id: 1,
+      id_Region: 4,
+      categorie: "musee",
+      name: "Villa & Jardins Ephrussi de Rothschild",
+      url: "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/09/67/7b/ba/villa-jardins-ephrussi.jpg?w=2000&h=-1&s=1",
+      desc: "La villa Ephrussi de Rothschild, appelée aussi villa Île-de-France, est un des plus beaux palais de style Renaissance de la Côte d'Azur construit sur un sommet de la presqu'île du cap Ferrat entre 1905 et 1912 à Saint-Jean-Cap-Ferrat par la baronne Béatrice Ephrussi de Rothschild.",
+    },
+    {
+      id: 1,
+      id_Region: 4,
+      categorie: "monument",
+      name: "Amphithéâtre (les Arènes)",
+      url: "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1d/c6/06/33/arene-vue-d-en-haut.jpg?w=1400&h=-1&s=1",
+      desc: "Une des meilleures structures préservées de l’architecture romaine, cet amphithéâtre est toujours utilisé pour des spectacles, concerts, et corridas, donc renseignez-vous avant votre visite. Même sans évènement spécial, le lieu vaut d’être visité, surtout pour les vues surprenantes du sommet.",
+    },
+    {
+      id: 1,
+      id_Region: 4,
+      categorie: "eglise",
+      name: "Le Palais des Papes d'Avignon",
+      url: "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/03/fd/9f/38/avignon.jpg?w=2000&h=-1&s=1",
+      desc: "Le Palais des Papes d'Avignon est l'une des attractions touristiques les plus populaires de la ville. Comptez plusieurs heures pour explorer son intérieur qui donne un aperçu de la vie au Moyen Âge. Choisissez une visite guidée avec un billet coupe-file pour gagner du temps et mieux comprendre le lieu.",
+    },
+    {
+      id: 1,
+      id_Region: 4,
+      categorie: "eglise",
+      name: "Basilique Notre-Dame de la Garde",
+      url: "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/26/e2/de/ac/interno.jpg?w=1400&h=-1&s=1",
+      desc: "La Basilique Notre-Dame de la Garde est une icône Marseillaise. De son perchoir, elle veille sur le port et la ville. Visitez la Basilique pour une vue imprenable sur Marseille et faites un tour au Musée d’Art Sacré pour en apprendre plus sur l’histoire de ce site historique.",
+    },
+  ],
+};
 
 export default data;
