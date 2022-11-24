@@ -1,5 +1,5 @@
 import './App.css';
-import {useEffect,useState} from 'react';
+import { useEffect, useState } from 'react';
 import MonCard from "./components/MonCard/MonCard"
 import RegCard from "./components/RegCard/RegCard"
 import LCard from './components/LCard/LCard';

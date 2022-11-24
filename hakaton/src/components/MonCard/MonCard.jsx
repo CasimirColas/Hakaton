@@ -1,11 +1,37 @@
 import React from 'react';
+import { useState } from 'react';
+import Card from '../Card/Card';
+import "./moncard.css";
 
-const MonCard = ({id}) => {
+function MonCard({ monuments }) {
+    const [monument, setMonument] = useState();
+    const [card, setCard] = useState(true);
+
+
+
+    function jecpas() {
+        setMonument(monuments);
+        setCard(false)
+    }
+
     return (
         <div>
-            <p>{id}</p>
+            {card ? (
+                <div>
+                    <div onClick={jecpas} >
+                        <div>{monuments.name}</div>
+                        <img src={monuments.url} alt="" />
+                    </div>
+                </div>
+            ) : (
+                <div>
+                    <Card monument={monument} />
+                </div>)
+            }
         </div>
     );
 };
+
+export default MonCard;
 
 export default MonCard;
