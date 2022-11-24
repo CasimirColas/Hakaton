@@ -2,9 +2,8 @@ import React from 'react';
 
 const LCard = ({nom,img}) => {
     return (
-        <div>
+        <div className='region-img' style={{background: `url(${img})`}}>
             <h3>{nom}</h3>
-            <img src={img} alt='not found?'/>
         </div>
     );
 };

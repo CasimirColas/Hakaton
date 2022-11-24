@@ -2,6 +2,7 @@ import './App.css';
 import {useEffect,useState} from 'react';
 import MonCard from "./components/MonCard/MonCard"
 import RegCard from "./components/RegCard/RegCard"
+import LCard from './components/LCard/LCard';
 import data from "./data/data"
 
 function App() {
@@ -59,34 +60,61 @@ function App() {
     return result
   }
   useEffect(() => {
-    if(search==="" ){
+    const defaultMonu = {
+      eglise:false,
+      musee:false,
+      monument:false,
+      "site naturel":false,}
+    const defaultReg = {
+      GrandEst:false,
+      IleDeFrance:false,
+      Bretagne:false,
+      ProvenceAlpesCoteDazur:false
+    }
+    if(search==="" || monuTags===defaultMonu || regTags===defaultReg){
       setDispData(data.Region)
     }else{
       setDispData(data.Touristique)
     }
-  }, [search]);
+  }, [search,monuTags,regTags]);
 
   return (
-    <div className="App">
-      <div className='mainSpace'>
-        <button type='submit' onClick={()=>{tagfilterReg("IleDeFrance")}}>IleDeFrance</button>
-        <button type='submit' onClick={()=>{tagfilterMonu("eglise")}}>eglise</button>
-      <h1>Question</h1>
-      <img src='http://placekitten.com/200/300' alt='not loaded?'/>
-      </div>
-      <input type="text" onChange={(e)=>textChange(e.target.value)}/>
-      <div className='selector'>
-        <div className='selMonu'>
-          <button type='submit'>O</button>
-          <p>Eglise</p>
+    <div className="top-container">
+      <h1 className="title-homepage">Quelle region voulez-vous découvrir ?</h1>
+      <div className="element-top-container">
+          <div className="search-input">
+            <input className="filter-button" type="text" onChange={(e)=>textChange(e.target.value)}/>
+            <div className="checkboxs-chimique">
+                <form>
+                    <h3>Nos types de monuments</h3>
+                    <input type="checkbox" onClick={()=>{tagfilterMonu("eglise")}}/>
+                    <label>Eglise</label><br/>
+                    <input type="checkbox" onClick={()=>{tagfilterMonu("muse")}}/>
+                    <label>Musee</label><br/>
+                    <input type="checkbox" onClick={()=>{tagfilterMonu("monument")}}/>
+                    <label>Monument</label><br/>
+                    <input type="checkbox" onClick={()=>{tagfilterMonu("site naturel")}}/>
+                    <label>Site naturel</label><br/>
+                </form>
+                <form>
+                    <h3>Nos regions</h3>
+                    <input type="checkbox" onClick={()=>{tagfilterReg("GrandEst")}}/>
+                    <label>Grand-Est</label><br/>
+                    <input type="checkbox" onClick={()=>{tagfilterReg("IleDeFrance")}}/>
+                    <label>Iles-de-France</label><br/>
+                    <input type="checkbox" onClick={()=>{tagfilterReg("Bretagne")}}/>
+                    <label>Bretagne</label><br/>
+                    <input type="checkbox" onClick={()=>{tagfilterReg("ProvenceAlpesCoteDazur")}}/>
+                    <label>Provence</label><br/>
+                </form>
+            </div>
+          </div>
+          <h2 className="suggestions-title">Nos Suggestions</h2>
         </div>
-        <div className='selReg'>
-        <button type='submit'>O</button>
-          <p>une region</p>
-        </div>
+        <div className="suggestions-container">
+      <div className='region-img-container'>
+        {filterForReg(filterForMonu(dispData.filter((e)=>e.name.includes(search)))).map((e)=><LCard key={e.id} nom={e.name} img={e.url}/>)}
       </div>
-      <div className='displayedLCards'>
-        {filterForReg(filterForMonu(dispData.filter((e)=>e.name.includes(search)))).map((e)=><p key={e.id}>{e.name}</p>)}
       </div>
     </div>
   );
