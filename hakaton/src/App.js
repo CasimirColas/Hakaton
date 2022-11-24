@@ -5,31 +5,37 @@ import RegCard from "./components/RegCard/RegCard"
 import data from "./data/data"
 
 function App() {
-  const [search, setSearch] = useState("");
-  const [dispData, setDispData] = useState(data.Region);
-  const [tags, setTags] = useState({
+  const defaultMonu = {
     eglise:false,
-    muse:false,
-    monum:false,
-    st:false,
+    musee:false,
+    monument:false,
+    st:false,}
+  const defaultReg = {
     ge:false,
     idf:false,
     br:false,
     pac:false
-  });
-  function tagfilter(tag) {
-    tags[`${tag}`] = !tags[`${tag}`]
-    setTags(tags)
-    console.log(tags);
+  }
+  const [search, setSearch] = useState("");
+  const [dispData, setDispData] = useState(data.Region);
+  const [monuTags, setMonuTags] = useState(defaultMonu);
+  const [regTags, setRegTags] = useState(defaultReg);
+
+  function tagfilterMonu(tag) {
+    const def = defaultMonu
+    def[`${tag}`] = !monuTags[`${tag}`]
+    setMonuTags(def)
+    console.log(filterForMonu(dispData.filter((e)=>e.name.includes(search))));
   }
   function textChange(value) {
     setSearch(value)
   }
-  function filterForeTags(array) {
+  function filterForMonu(array) {
     let result = array
-    for(let i in Object.keys(tags)){
-      if(tags[i]===true){
-        result = result.filter() 
+    for(let i in Object.keys(monuTags)){
+      console.log(monuTags[`${Object.keys(monuTags)[i]}`]);
+      if(monuTags[`${Object.keys(monuTags)[i]}`]===true){
+        result = result.filter((e)=>e.categorie===Object.keys(monuTags)[i]) 
       }
     }
     return result
@@ -44,7 +50,7 @@ function App() {
   return (
     <div className="App">
       <div className='mainSpace'>
-        <button type='submit' onClick={()=>{tagfilter("st")}}>info</button>
+        <button type='submit' onClick={()=>{tagfilterMonu("eglise")}}>info</button>
       <h1>Question</h1>
       <img src='http://placekitten.com/200/300' alt='not loaded?'/>
       </div>
@@ -60,7 +66,7 @@ function App() {
         </div>
       </div>
       <div className='displayedLCards'>
-        {dispData.filter((e)=>e.name.includes(search)).map((e)=><p key={e.id}>{e.name}</p>)}
+        {filterForMonu(dispData.filter((e)=>e.name.includes(search))).map((e)=><p key={e.id}>{e.name}</p>)}
       </div>
     </div>
   );
