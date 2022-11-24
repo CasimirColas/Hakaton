@@ -1,12 +1,12 @@
 import React from 'react';
-
+import "./card.css";
 
 function Card({ monument }) {
 
     function cardabsolute() {
         return {
-            backgroundColor: "rgb(0,0,0)",
-            color: "white",
+            backgroundColor: "white",
+            color: "black",
             width: "100%",
             heigh: "100%",
             position: 'absolute',
@@ -22,10 +22,9 @@ function Card({ monument }) {
     return (
 
         <div className="card" style={cardabsolute()}>
-            <div> {monument.name}</div>
-            <img src={monument.url} alt="" />
-            <div> {monument.desc}</div>
-
+            <div className='cardName'>{monument.name}</div>
+            <img className='imgMonument' src={monument.url} alt="" />
+            <div className='cardDesc'>{monument.desc}</div>
         </div>
 
     );
