@@ -24,8 +24,8 @@ const data =
             "name": "ProvenceAlpesCoteDazur",
             "url": "http://images.innoveduc.fr/php_parcours/cp2/chocolate.png",
             "des": "Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression."
-        },
-        "Touristique": 
+        },],
+        "Touristique":[ 
             {
               "id": 1,
               "id_Region": 1,
@@ -217,6 +217,8 @@ const data =
                 "name": "cathedrale tkt",
                 "url": "http://images.innoveduc.fr/php_parcours/cp2/cherry.png",
                 "desc": "Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression."
-              },
-    ]
+              },]
+    
 }
+
+export default data;
