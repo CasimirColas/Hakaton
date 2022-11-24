@@ -11,19 +11,19 @@ const data =
             "id": 2,
             "name": "IleDeFrance",
             "url": "http://images.innoveduc.fr/php_parcours/cp2/chocolate.png",
-            "des": "Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression."
+            "desc": "Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression."
         },
         {
             "id": 3,
             "name": "Bretagne",
             "url": "http://images.innoveduc.fr/php_parcours/cp2/chocolate.png",
-            "des": "Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression."
+            "desc": "Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression."
         },
         {
             "id": 4,
             "name": "ProvenceAlpesCoteDazur",
             "url": "http://images.innoveduc.fr/php_parcours/cp2/chocolate.png",
-            "des": "Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression."
+            "desc": "Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression."
         },],
         "Touristique":[ 
             {
