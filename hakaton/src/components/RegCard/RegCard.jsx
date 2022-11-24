@@ -5,23 +5,15 @@ import MonCard from '../MonCard/MonCard';
 
 
 
-function RegCard({id}) {
+function RegCard({id, onClick}) {
 
     const region = data.Region.filter(e => e.id === id);
-
-
-    function buttonMenu() {
-
-        return {
-
-        };
-    }
 
     return (
 
         <div>
+            <div className="buttonMenu" onClick={onClick}></div>
             <div className='regCard' >
-                <div className="buttonMenu" onClick={buttonMenu}></div>
                 <h4>{region[0].name}</h4>
                 <img src={region[0].url} alt="" />
                 <p>{region[0].desc}</p>

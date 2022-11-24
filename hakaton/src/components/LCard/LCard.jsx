@@ -9,7 +9,7 @@ const LCard = ({id,nom,img}) => {
     return (
         <div className='region-img' style={{background: `url(${img})`}} onClick={click}>
             <h3>{nom}</h3>
-            {displayCard?<RegCard id={id}/>:null}
+            {displayCard?<RegCard id={id} onClick={click}/>:null}
         </div>
     );
 };
