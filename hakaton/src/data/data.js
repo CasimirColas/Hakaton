@@ -93,10 +93,10 @@ const data = {
     {
       id: 9,
       id_Region: 2,
-      categorie: "eglise",
-      name: "cathedrale tkt",
-      url: "http://images.innoveduc.fr/php_parcours/cp2/cherry.png",
-      desc: "Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression.",
+      categorie: "monument",
+      name: "Arc de Triomphe",
+      url: "https://cdn.sortiraparis.com/images/80/1467/523194-visuel-paris-arc-de-triomphe.jpg",
+      desc: "L'arc de triomphe de l'Étoile, souvent appelé simplement l'Arc de Triomphe, est un monument situé à Paris, en un point haut à la jonction des territoires des 8ᵉ, 16ᵉ et 17ᵉ arrondissements, notamment au sommet de l'avenue des Champs-Élysées et de l'avenue de la Grande-Armée, lesquelles constituent un grand axe est-ouest parisien partant de la pyramide du Louvre, passant par l'obélisque de La Concorde, l'Arc de Triomphe lui-même et se terminant au loin par l'Arche de la Défense.",
     },
     {
       id: 10,
