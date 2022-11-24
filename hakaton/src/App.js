@@ -1,5 +1,5 @@
 import './App.css';
-import {useEffect,useState} from 'react';
+import { useEffect, useState } from 'react';
 import MonCard from "./components/MonCard/MonCard"
 import RegCard from "./components/RegCard/RegCard"
 
@@ -9,10 +9,9 @@ function App() {
     setSearch(value)
   }
   return (
-    <div className="App">
-      <input type="search" onChange={(e)=>textChange(e.target.value)}/>
-      <p>{search}</p>
-    </div>
+
+    <div><RegCard /></div>
+
   );
 }
 
