@@ -10,6 +10,7 @@ function Card({ monument }) {
             width: "100%",
             heigh: "100%",
             position: 'absolute',
+            zIndex: '40',
             top: 0,
             left: 0,
             right: 0,

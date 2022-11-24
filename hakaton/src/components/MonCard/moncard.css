@@ -1,5 +1,6 @@
 .btnBack {
     position: absolute;
+    z-index: 50;
     top: 1em;
     left: 1em;
     font-size: 1.5em;

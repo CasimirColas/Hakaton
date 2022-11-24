@@ -15,13 +15,12 @@ function MonCard({ monuments }) {
         setCard(false);
         setBtnback(false);
     }
-    console.log(btnback)
+
 
     function btnbackmoncard() {
         setBtnback(true);
+        setCard(true);
     }
-
-    console.log(btnback)
 
     return (
         <div>
