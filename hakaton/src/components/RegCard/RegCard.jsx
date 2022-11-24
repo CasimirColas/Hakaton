@@ -22,6 +22,9 @@ function RegCard() {
     }
 
 
+    const region = data.filter(e => e.id === '1');
+    console.log(region.name)
+
     function buttonMenu() {
         console.log('clic Vers menu')
         return {
