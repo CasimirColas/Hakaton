@@ -102,8 +102,8 @@ function App() {
         </div>
         <div className="suggestions-container">
       <div className='region-img-container'>
-      {filterForMonu(filterForReg(data.Region.filter((e)=>e.name.includes(search)))).map((e)=><LCard key={e.id} nom={e.name} img={e.url}/>)}
-        {filterForRegM(filterForMonu(data.Touristique.filter((e)=>e.name.includes(search)))).map((e)=><LCard key={e.id} nom={e.name} img={e.url}/>)}
+      {filterForMonu(filterForReg(data.Region.filter((e)=>e.name.includes(search)))).map((e)=><LCard key={e.id} id={e.id} nom={e.name} img={e.url}/>)}
+        {filterForRegM(filterForMonu(data.Touristique.filter((e)=>e.name.includes(search)))).map((e)=><LCard key={e.id} id={e.id} nom={e.name} img={e.url}/>)}
       </div>
       </div>
     </div>

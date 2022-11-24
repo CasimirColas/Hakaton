@@ -5,9 +5,9 @@ import MonCard from '../MonCard/MonCard';
 
 
 
-function RegCard() {
+function RegCard({id}) {
 
-    const region = data.Region.filter(e => e.id === 1);
+    const region = data.Region.filter(e => e.id === id);
 
 
     function buttonMenu() {

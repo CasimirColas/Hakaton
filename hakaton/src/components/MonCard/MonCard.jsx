@@ -33,5 +33,3 @@ function MonCard({ monuments }) {
 };
 
 export default MonCard;
-
-export default MonCard;
