@@ -6,16 +6,26 @@ import "./moncard.css";
 function MonCard({ monuments }) {
     const [monument, setMonument] = useState();
     const [card, setCard] = useState(true);
+    const [btnback, setBtnback] = useState(true);
 
 
 
     function jecpas() {
         setMonument(monuments);
-        setCard(false)
+        setCard(false);
+        setBtnback(false);
     }
+    console.log(btnback)
+
+    function btnbackmoncard() {
+        setBtnback(true);
+    }
+
+    console.log(btnback)
 
     return (
         <div>
+            {btnback ? null : (<div className='btnBack' onClick={btnbackmoncard}>←</div>)}
             {card ? (
                 <div>
                     <div onClick={jecpas} >

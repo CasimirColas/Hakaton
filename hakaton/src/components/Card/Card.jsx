@@ -19,14 +19,13 @@ function Card({ monument }) {
         }
     }
 
-    return (
 
+    return (
         <div className="card" style={cardabsolute()}>
             <div className='cardName'>{monument.name}</div>
             <img className='imgMonument' src={monument.url} alt="" />
             <div className='cardDesc'>{monument.desc}</div>
         </div>
-
     );
 };
 
