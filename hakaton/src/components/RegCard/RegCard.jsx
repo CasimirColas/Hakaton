@@ -18,43 +18,40 @@ function RegCard() {
         };
     }
 
-    function buttonMonCard() {
-        setMonument(false)
-        return {
-        };
-    }
-
-
     return (
 
-        <div className='regCard' >
+        <div>
 
-            <div className="buttonMenu" onClick={buttonMenu}></div>
-
-
-            <h4>{region[0].name}</h4>
-            <img src={region[0].url} alt="" />
-            <p>{region[0].desc}</p>
-
-            <div className="buttonMonCard" onClick={buttonMonCard}>
-                {
-                    monument ?
-                        (
-                            data.Touristique.map((monuments, index) =>
-                                (<Card key={index} monuments={monuments} />))
-
-                        )
-                        :
-                        (
-                            <MonCard />
-                        )
-
-                }
-            </div>
+            {
+                monument ?
+                    (
 
 
+                        <div className='regCard' >
 
-        </div >
+                            <div className="buttonMenu" onClick={buttonMenu}></div>
+
+
+                            <h4>{region[0].name}</h4>
+                            <img src={region[0].url} alt="" />
+                            <p>{region[0].desc}</p>
+
+                            <div className="buttonMonCard">
+
+                                {data.Touristique.map((monuments, index) =>
+                                    (<Card key={index} monuments={monuments} />))}
+
+                            </div>
+                        </div>
+                    )
+                    :
+                    (
+                        <MonCard />
+                    )
+
+            }
+
+        </div>
     );
 };
 
