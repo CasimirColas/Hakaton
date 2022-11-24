@@ -1,50 +1,58 @@
 import React from 'react';
 import "./regcard.css";
+import data from "../../data/data";
+import Card from '../Card/Card';
+import MonCard from '../MonCard/MonCard';
+import { useState } from 'react';
 
 function RegCard() {
+    const [monument, setMonument] = useState(true);
 
-    const data =
-    {
-        "Region": [
-            {
-                "id": 1,
-                "name": "GrandEst",
-                "url": "http://images.innoveduc.fr/php_parcours/cp2/chocolate.png",
-                "desc": "Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression."
-            },
-            {
-                "id": 2,
-                "name": "IleDeFrance",
-                "url": "http://images.innoveduc.fr/php_parcours/cp2/chocolate.png",
-                "des": "Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression."
-            }
-        ]
-    }
+    const region = data.Region.filter(e => e.id === 1);
 
-
-    const region = data.filter(e => e.id === '1');
-    console.log(region.name)
 
     function buttonMenu() {
-        console.log('clic Vers menu')
+
         return {
 
         };
     }
 
     function buttonMonCard() {
-        console.log('clic Vers monuments')
+        setMonument(false)
         return {
-
         };
     }
 
+
     return (
+
         <div className='regCard' >
 
             <div className="buttonMenu" onClick={buttonMenu}></div>
 
-            <div className="buttonMonCard" onClick={buttonMonCard}></div>
+
+            <h4>{region[0].name}</h4>
+            <img src={region[0].url} alt="" />
+            <p>{region[0].desc}</p>
+
+            <div className="buttonMonCard" onClick={buttonMonCard}>
+                {
+                    monument ?
+                        (
+                            data.Touristique.map((monuments, index) =>
+                                (<Card key={index} monuments={monuments} />))
+
+                        )
+                        :
+                        (
+                            <MonCard />
+                        )
+
+                }
+            </div>
+
+
 
         </div >
     );
