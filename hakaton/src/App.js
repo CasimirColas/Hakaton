@@ -24,7 +24,6 @@ function App() {
     ProvenceAlpesCoteDazur:4
   }
   const [search, setSearch] = useState("");
-  const [dispData, setDispData] = useState(data.Region);
   const [monuTags, setMonuTags] = useState(defaultMonu);
   const [regTags, setRegTags] = useState(defaultReg);
 
@@ -50,7 +49,7 @@ function App() {
     }
     return result
   }
-  function filterForReg(array) {
+  function filterForRegM(array) {
     let result = array
     for(let i in Object.keys(regTags)){
       if(regTags[`${Object.keys(regTags)[i]}`]===true){
@@ -59,25 +58,15 @@ function App() {
     }
     return result
   }
-  useEffect(() => {
-    const defaultMonu = {
-      eglise:false,
-      musee:false,
-      monument:false,
-      "site naturel":false,}
-    const defaultReg = {
-      GrandEst:false,
-      IleDeFrance:false,
-      Bretagne:false,
-      ProvenceAlpesCoteDazur:false
+  function filterForReg(array) {
+    let result = array
+    for(let i in Object.keys(regTags)){
+      if(regTags[`${Object.keys(regTags)[i]}`]===true){
+        result = result.filter((e)=>e.id===fkeys[`${Object.keys(regTags)[i]}`]) 
+      }
     }
-    if(search==="" || monuTags===defaultMonu || regTags===defaultReg){
-      setDispData(data.Region)
-    }else{
-      setDispData(data.Touristique)
-    }
-  }, [search,monuTags,regTags]);
-
+    return result
+  }
   return (
     <div className="top-container">
       <h1 className="title-homepage">Quelle region voulez-vous découvrir ?</h1>
@@ -113,7 +102,8 @@ function App() {
         </div>
         <div className="suggestions-container">
       <div className='region-img-container'>
-        {filterForReg(filterForMonu(dispData.filter((e)=>e.name.includes(search)))).map((e)=><LCard key={e.id} nom={e.name} img={e.url}/>)}
+      {filterForMonu(filterForReg(data.Region.filter((e)=>e.name.includes(search)))).map((e)=><LCard key={e.id} nom={e.name} img={e.url}/>)}
+        {filterForRegM(filterForMonu(data.Touristique.filter((e)=>e.name.includes(search)))).map((e)=><LCard key={e.id} nom={e.name} img={e.url}/>)}
       </div>
       </div>
     </div>
