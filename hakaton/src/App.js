@@ -7,7 +7,9 @@ import data from "./data/data"
 function App() {
   const [search, setSearch] = useState(undefined);
   const [dispData, setDispData] = useState(data[0]);
-  
+  function tagfilter(params) {
+    
+  }
   function textChange(value) {
     setSearch(value)
   }
@@ -29,7 +31,7 @@ function App() {
         </div>
       </div>
       <div className='displayedLCards'>
-        {}
+        {dispData}
       </div>
     </div>
   );
