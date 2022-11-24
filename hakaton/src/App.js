@@ -26,6 +26,8 @@ function App() {
   const [search, setSearch] = useState("");
   const [monuTags, setMonuTags] = useState(defaultMonu);
   const [regTags, setRegTags] = useState(defaultReg);
+  const [regList, setRegList] = useState(filterForMonu(filterForReg(data.Region.filter((e)=>e.name.includes(search)))).map((e)=><LCard key={e.id} id={e.id} nom={e.name} img={e.url}/>));
+  const [monuList, setMonuList] = useState(filterForRegM(filterForMonu(data.Touristique.filter((e)=>e.name.includes(search)))).map((e)=><LCard key={e.id} id={e.id} nom={e.name} img={e.url}/>));
 
   function tagfilterMonu(tag) {
     const def = defaultMonu
@@ -67,6 +69,10 @@ function App() {
     }
     return result
   }
+  useEffect(() => {
+    setRegList(filterForMonu(filterForReg(data.Region.filter((e)=>e.name.includes(search)))).map((e)=><LCard key={e.id} id={e.id} nom={e.name} img={e.url}/>))
+    setMonuList(filterForRegM(filterForMonu(data.Touristique.filter((e)=>e.name.includes(search)))).map((e)=><LCard key={e.id} id={e.id} nom={e.name} img={e.url}/>))
+  }, [monuTags,regTags]);
   return (
     <div className="top-container">
       <h1 className="title-homepage">Quelle region voulez-vous découvrir ?</h1>
@@ -76,24 +82,24 @@ function App() {
             <div className="checkboxs-chimique">
                 <form>
                     <h3>Nos types de monuments</h3>
-                    <input type="checkbox" onClick={()=>{tagfilterMonu("eglise")}}/>
+                    <input type="checkbox" checked={monuTags.eglise} onChange={()=>{tagfilterMonu("eglise")}}/>
                     <label>Eglise</label><br/>
-                    <input type="checkbox" onClick={()=>{tagfilterMonu("muse")}}/>
+                    <input type="checkbox" checked={monuTags.musee} onChange={()=>{tagfilterMonu("musee")}}/>
                     <label>Musee</label><br/>
-                    <input type="checkbox" onClick={()=>{tagfilterMonu("monument")}}/>
+                    <input type="checkbox" checked={monuTags.monument}  onChange={()=>{tagfilterMonu("monument")}}/>
                     <label>Monument</label><br/>
-                    <input type="checkbox" onClick={()=>{tagfilterMonu("site naturel")}}/>
+                    <input type="checkbox" checked={monuTags['site naturel']}  onChange={()=>{tagfilterMonu("site naturel")}}/>
                     <label>Site naturel</label><br/>
                 </form>
                 <form>
                     <h3>Nos regions</h3>
-                    <input type="checkbox" onClick={()=>{tagfilterReg("GrandEst")}}/>
+                    <input type="checkbox" checked={regTags.GrandEst} onChange={()=>{tagfilterReg("GrandEst")}}/>
                     <label>Grand-Est</label><br/>
-                    <input type="checkbox" onClick={()=>{tagfilterReg("IleDeFrance")}}/>
+                    <input type="checkbox" checked={regTags.IleDeFrance} onChange={()=>{tagfilterReg("IleDeFrance")}}/>
                     <label>Iles-de-France</label><br/>
-                    <input type="checkbox" onClick={()=>{tagfilterReg("Bretagne")}}/>
+                    <input type="checkbox" checked={regTags.Bretagne} onChange={()=>{tagfilterReg("Bretagne")}}/>
                     <label>Bretagne</label><br/>
-                    <input type="checkbox" onClick={()=>{tagfilterReg("ProvenceAlpesCoteDazur")}}/>
+                    <input type="checkbox" checked={regTags.ProvenceAlpesCoteDazur} onChange={()=>{tagfilterReg("ProvenceAlpesCoteDazur")}}/>
                     <label>Provence</label><br/>
                 </form>
             </div>
@@ -102,8 +108,8 @@ function App() {
         </div>
         <div className="suggestions-container">
       <div className='region-img-container'>
-      {filterForMonu(filterForReg(data.Region.filter((e)=>e.name.includes(search)))).map((e)=><LCard key={e.id} id={e.id} nom={e.name} img={e.url}/>)}
-        {filterForRegM(filterForMonu(data.Touristique.filter((e)=>e.name.includes(search)))).map((e)=><LCard key={e.id} id={e.id} nom={e.name} img={e.url}/>)}
+      {regList}
+        {monuList}
       </div>
       </div>
     </div>
