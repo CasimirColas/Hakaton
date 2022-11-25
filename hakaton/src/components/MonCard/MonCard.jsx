@@ -1,5 +1,4 @@
 import React from 'react';
-import { useState } from 'react';
 import "./moncard.css";
 import data from '../../data/data';
 
