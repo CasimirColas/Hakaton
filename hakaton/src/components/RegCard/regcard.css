@@ -2,30 +2,38 @@
     position: absolute;
     width: 90vw;
     height: 90vh;
-    background-color:#fdf1b8;   
-    ;
+    background-color: blue;
     left:0;
     right:0;
     top: 5vh;
     margin-left:auto;
     margin-right:auto;
     pointer-events: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    text-shadow: none;
+    border-radius: 50px;
+    border: solid gray 4px;
+}
+.regCard p{
+    margin-inline: 2rem;
+}
+.regCard button{
+    position: relative;
+    height: 4rem;
+    width: 4rem;
+    border-radius: 50px;
+    font: 100%;
+    right: 50%;
 }
 .regCard img {
     max-width: 90%;
     max-height: 40%;
 }
 .monumentsList {
-    max-width: inherit;
+    max-width: 90%;
     max-height: 40%;
-    overflow-x: scroll;
-    display: flex;
-}
-h3{
-    justify-content: center;
-    align-items: center;
-    display: flex;
-}
-p{
-    margin-inline: 3rem;
+    overflow: scroll;
 }

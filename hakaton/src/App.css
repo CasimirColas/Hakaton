@@ -31,20 +31,15 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background: linear-gradient(
-        rgba(0, 0, 0, 0.45), 
-        rgba(0, 0, 0, 0.45)
-      ),url(http://placekitten.com/200/300);
-      background-size:cover;
 }
 .top-container h1{
     color: white;
 }
 .element-top-container{
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    
 }
 .filter-button{
 display: flex;
@@ -68,12 +63,13 @@ height: 20px;
 /*fin top container*/
 /*Suggestions part*/
 .suggestions-title{
-    padding-left: 10%;
     padding-top: 3rem;
     font-size: 30px;
     padding-bottom: 2rem;
     color: white;
     text-shadow: 2px 4px 0px black;
+    display: flex;
+    align-items: center;
 }
 
 .region-name{
@@ -93,6 +89,9 @@ height: 20px;
     border: solid 1px white;
     text-shadow: 2px 4px 0px black;
 }
+.region-img h3 {
+    margin-left: 2rem;
+}
 .region-img:hover{
     margin-bottom: 20px;
     box-shadow: -5px 10px 15px 0px #000000;
@@ -105,10 +104,12 @@ height: 20px;
     justify-content: center;
     padding-bottom: 1rem;  
     gap: 2rem;;
-    background-color: #8787875c;
+    background-color: 8787875c;
     padding-top: 3%;
 }
 .region-img-container div{
+    padding-top: 2rem;
+    padding-left: 2rem;
     font-size: 25px;
 }
 .suggestions-container{
