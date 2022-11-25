@@ -30,6 +30,7 @@ function App() {
   const [regList, setRegList] = useState(filterForMonu(filterForReg(data.Region.filter((e)=>e.name.includes(search)))).map((e)=><LCard key={e.id} id={e.id} nom={e.name} img={e.url} isReg={true}/>));
   const [monuList, setMonuList] = useState(filterForRegM(filterForMonu(data.Touristique.filter((e)=>e.name.includes(search)))).map((e)=><LCard key={e.id} id={e.id} nom={e.name} img={e.url} isReg={false}/>));
   const [style, setStyle] = useState(backgrounds[Math.floor(Math.random() * 3)]);
+  const [backgroundFrom, setBackgroundFrom] = useState();
   function tagfilterMonu(tag) {
     const def = defaultMonu
     def[`${tag}`] = !monuTags[`${tag}`]
@@ -70,10 +71,20 @@ function App() {
     }
     return result
   }
+  function suggestion(par1,par2) {
+    console.log(par1,par2);
+    if(par1.length===0 &&par2.length===0){
+      return (<div className='sugg'>
+        <h3>Nous n'avons pas trouve ce que vous cherchiez</h3>
+        <h4>Voici notre suggestion</h4>
+        <LCard id={data.Region[1].id} nom={data.Region[1].name} img={data.Region[1].url} isReg={true}/>
+      </div>)
+    }
+  }
   useEffect(() => {
     setRegList(filterForMonu(filterForReg(data.Region.filter((e)=>e.name.includes(search)))).map((e)=><LCard key={e.id} id={e.id} nom={e.name} img={e.url} isReg={true}/>))
     setMonuList(filterForRegM(filterForMonu(data.Touristique.filter((e)=>e.name.includes(search)))).map((e)=><LCard key={e.id} id={e.id} nom={e.name} img={e.url} isReg={false}/>))
-  }, [monuTags,regTags]);
+  }, [monuTags,regTags,search]);
   return (
     <div className="top-container" style={{background:`url(${style.url})`,backgroundSize:"cover"}}>
       <div className="element-top-container">
@@ -111,6 +122,7 @@ function App() {
       <div className='region-img-container'>
       {regList}
         {monuList}
+        {suggestion(monuList,regList)}
       </div>
       </div>
     </div>

@@ -11,8 +11,8 @@ function MicroMonu({id,img,name}) {
     function clickClose() {
         setDisplayMonu(false)
     }
-    return (<div className="microMonu" style={{background: `url(${img})`}} onClick={clickOpen}>
-        <h5>{name}</h5>
+    return (<div className="microMonu" style={{background: `url(${img})`, backgroundSize:"cover"}} onClick={clickOpen}>
+        <h5 className="textmicromonu">{name}</h5>
         {displayMonu? <MonCard id={id} onClick={clickClose}/>:null}
     </div>);
 }
