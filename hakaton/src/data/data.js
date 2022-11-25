@@ -10,7 +10,7 @@ const data = {
       id: 2,
       name: "IleDeFrance",
       url: "https://france3-regions.francetvinfo.fr/image/6tid-aN2WJ9Qza7vDLx-1B39z6c/600x400/regions/2020/06/09/5edee828a203a_maxstockfr242287.jpg",
-      des: "Si l'histoire et la culture vous passionne, vous allez être gâté durant votre séjour en Île-de-France. Cette région est riche en histoire et en culture comme en témoigne ses nombreux châteaux et monuments. Parmi les plus important, il y a le célèbre château de Versailles. C'est l'un des monuments phares de la France.",
+      desc: "Si l'histoire et la culture vous passionne, vous allez être gâté durant votre séjour en Île-de-France. Cette région est riche en histoire et en culture comme en témoigne ses nombreux châteaux et monuments. Parmi les plus important, il y a le célèbre château de Versailles. C'est l'un des monuments phares de la France.",
     },
     {
       id: 3,

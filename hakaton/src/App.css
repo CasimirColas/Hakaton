@@ -90,7 +90,8 @@ height: 20px;
 }
 .region-img:hover{
     margin-bottom: 20px;
-    box-shadow: -5px 10px 15px 0px #000000;
+    color: yellowgreen;
+    box-shadow: -4px 10px 15px 0px #000000;
     border: solid 1px grey;
 }
 .region-img-container{
@@ -106,6 +107,28 @@ height: 20px;
 .suggestions-container{
     width: 100%;
     color: white;
+}
+.sugg {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.squaretxt {
+    padding: 0.5rem;
+    background-color: #ffffff7d;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: grey solid 2px;
+    border-radius: 20px;
+}
+.sugg .sugText{
+    color: black;
+    margin-top: 15px;
+}
+.sugg .region-img{
+    margin-top: 10%;
+    margin-bottom: 33%;
 }
 @media (max-width: 767px) {
     .top-container h1{
