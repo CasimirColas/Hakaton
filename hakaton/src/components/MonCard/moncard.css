@@ -1,9 +1,10 @@
 .btnmoncard {
-    top: 2px;
-    left: 2px;
+    top: 1em;
+    left: 1em;
     position: absolute;
     z-index: 1000;
     color: black;
+    cursor: pointer;
 }
 
 .monCard {
@@ -24,6 +25,8 @@
 }
 
 .imgMonument {
+    max-width: 80%;
+    height: auto;
     max-height: 70%;
     margin-top: 2em;
     margin-bottom: 2em;

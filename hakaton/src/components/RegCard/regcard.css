@@ -1,19 +1,16 @@
-.regCard{
+.regCard {
     position: absolute;
     width: 90vw;
     height: 90vh;
     background-color: blue;
-    left:0;
-    right:0;
+    left: 0;
+    right: 0;
     top: 5vh;
-    margin-left:auto;
-    margin-right:auto;
+    margin-left: auto;
+    margin-right: auto;
     pointer-events: auto;
 }
-.regCard img {
-    max-width: 90%;
-    max-height: 40%;
-}
+
 .monumentsList {
     max-width: inherit;
     max-height: 40%;
