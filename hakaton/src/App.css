@@ -128,32 +128,3 @@ form h3{
 form label {
     margin-left: 10px;
 }
-/*fin homepage*/
-/*fin moncard*/
-/*moncard.html*/
-.moncard-container{
-    margin-left: 10%;
-    margin-right: 10%;
-    height: 100vh;
-    background-color: yellow;
-}
-.moncard-img{
-    background-image: url(http://placekitten.com/200/300);
-    background-size: cover;
-    height: 40vh;
-}
-.moncard-text{
-    margin-top: 5vh;
-    width: 80%;
-    margin-left: 10%;
-    margin-right: 10%;
-background-color: purple;
-}
-.search-input{
-    margin-bottom: 1rem;
-    margin-top: 1rem;
-}
-.moncard-h1{
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-}

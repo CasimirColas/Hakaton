@@ -1,15 +1,34 @@
 import {useState} from 'react';
 import RegCard from '../RegCard/RegCard';
+import MonCard from '../MonCard/MonCard';
 
-const LCard = ({id,nom,img}) => {
+const LCard = ({id,nom,img, isReg}) => {
     const [displayCard, setDisplayCard] = useState(false);
-    function click() {
-        setDisplayCard(!displayCard)
+    const [pointerEv, setPointerEv] = useState("auto");
+    function clickOpen() {
+        if(displayCard===false){
+            setDisplayCard(true)
+            setPointerEv("none")
+            window.scrollTo(0, 0)
+        }
+    }
+    function clickClose() {
+        setDisplayCard(false)
+        setPointerEv("auto")
+    }
+    function onDisplay() {
+        if(displayCard){
+            if(isReg){
+                return<RegCard id={id} onClick={clickClose}/>
+            }else{
+                return<MonCard id={id} onClick={clickClose}/>
+            }
+        }
     }
     return (
-        <div className='region-img' style={{background: `url(${img})`}} onClick={click}>
+        <div className='region-img' style={{background: `url(${img})`,pointerEvents: pointerEv}} onClick={clickOpen}>
             <h3>{nom}</h3>
-            {displayCard?<RegCard id={id} onClick={click}/>:null}
+            {onDisplay()}
         </div>
     );
 };

@@ -1,7 +1,5 @@
 import './App.css';
 import { useEffect, useState } from 'react';
-import MonCard from "./components/MonCard/MonCard"
-import RegCard from "./components/RegCard/RegCard"
 import LCard from './components/LCard/LCard';
 import data from "./data/data"
 
@@ -26,8 +24,8 @@ function App() {
   const [search, setSearch] = useState("");
   const [monuTags, setMonuTags] = useState(defaultMonu);
   const [regTags, setRegTags] = useState(defaultReg);
-  const [regList, setRegList] = useState(filterForMonu(filterForReg(data.Region.filter((e)=>e.name.includes(search)))).map((e)=><LCard key={e.id} id={e.id} nom={e.name} img={e.url}/>));
-  const [monuList, setMonuList] = useState(filterForRegM(filterForMonu(data.Touristique.filter((e)=>e.name.includes(search)))).map((e)=><LCard key={e.id} id={e.id} nom={e.name} img={e.url}/>));
+  const [regList, setRegList] = useState(filterForMonu(filterForReg(data.Region.filter((e)=>e.name.includes(search)))).map((e)=><LCard key={e.id} id={e.id} nom={e.name} img={e.url} isReg={true}/>));
+  const [monuList, setMonuList] = useState(filterForRegM(filterForMonu(data.Touristique.filter((e)=>e.name.includes(search)))).map((e)=><LCard key={e.id} id={e.id} nom={e.name} img={e.url} isReg={false}/>));
 
   function tagfilterMonu(tag) {
     const def = defaultMonu
@@ -70,8 +68,8 @@ function App() {
     return result
   }
   useEffect(() => {
-    setRegList(filterForMonu(filterForReg(data.Region.filter((e)=>e.name.includes(search)))).map((e)=><LCard key={e.id} id={e.id} nom={e.name} img={e.url}/>))
-    setMonuList(filterForRegM(filterForMonu(data.Touristique.filter((e)=>e.name.includes(search)))).map((e)=><LCard key={e.id} id={e.id} nom={e.name} img={e.url}/>))
+    setRegList(filterForMonu(filterForReg(data.Region.filter((e)=>e.name.includes(search)))).map((e)=><LCard key={e.id} id={e.id} nom={e.name} img={e.url} isReg={true}/>))
+    setMonuList(filterForRegM(filterForMonu(data.Touristique.filter((e)=>e.name.includes(search)))).map((e)=><LCard key={e.id} id={e.id} nom={e.name} img={e.url} isReg={false}/>))
   }, [monuTags,regTags]);
   return (
     <div className="top-container">

@@ -1,44 +1,17 @@
 import React from 'react';
 import { useState } from 'react';
-import Card from '../Card/Card';
 import "./moncard.css";
+import data from '../../data/data';
 
-function MonCard({ monuments }) {
-    const [monument, setMonument] = useState();
-    const [card, setCard] = useState(true);
-    const [btnback, setBtnback] = useState(true);
-
-
-
-    function jecpas() {
-        setMonument(monuments);
-        setCard(false);
-        setBtnback(false);
-    }
-
-
-    function btnbackmoncard() {
-        setBtnback(true);
-        setCard(true);
-    }
-
-    return (
-        <div>
-            {btnback ? null : (<div className='btnBack' onClick={btnbackmoncard}>←</div>)}
-            {card ? (
-                <div>
-                    <div onClick={jecpas} >
-                        <div>{monuments.name}</div>
-                        <img src={monuments.url} alt="" />
-                    </div>
-                </div>
-            ) : (
-                <div>
-                    <Card monument={monument} />
-                </div>)
-            }
-        </div>
-    );
+function MonCard({ id,  onClick}) {
+return(
+    <div className='monCard'>
+    <button onClick={onClick}>X</button>
+    <h3>{data.Touristique[id-1].name}</h3>
+    <img src={data.Touristique[id-1].url} alt="not found"/>
+    <p>{data.Touristique[id-1].desc}</p>
+</div>
+)
 };
 
 export default MonCard;
