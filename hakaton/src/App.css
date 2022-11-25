@@ -82,6 +82,9 @@ height: 20px;
     padding-top: 1rem;
     font-size: 25px;
 }
+.regCard{
+    border-radius: 20px;
+}
 .region-img{
     width: 80%;
     height: 20rem;
@@ -108,6 +111,11 @@ height: 20px;
     gap: 2rem;;
     background-color: 8787875c;
     padding-top: 3%;
+}
+.region-img-container div{
+    padding-top: 2rem;
+    padding-left: 2rem;
+    font-size: 25px;
 }
 .suggestions-container{
     width: 100%;
