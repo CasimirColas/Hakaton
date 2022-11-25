@@ -21,12 +21,15 @@ function App() {
     Bretagne:3,
     ProvenceAlpesCoteDazur:4
   }
+  const backgrounds = [{color:"#e6ff99c",url:"https://www.vinsalsace.com/assets/img/wallpapers/400/2997-zinnkoepfle--copyrightzvardon-conseilvinsalsace__desktop_large.jpg"},
+                    {color:"#fff7e6c",url:"https://media.discordapp.net/attachments/1045628698163937280/1045628966020587550/unknown.png?width=885&height=586"},
+                    {color:"#ccffddc",url:"https://media.discordapp.net/attachments/1045628698163937280/1045629065530449980/unknown.png?width=885&height=589"}]
   const [search, setSearch] = useState("");
   const [monuTags, setMonuTags] = useState(defaultMonu);
   const [regTags, setRegTags] = useState(defaultReg);
   const [regList, setRegList] = useState(filterForMonu(filterForReg(data.Region.filter((e)=>e.name.includes(search)))).map((e)=><LCard key={e.id} id={e.id} nom={e.name} img={e.url} isReg={true}/>));
   const [monuList, setMonuList] = useState(filterForRegM(filterForMonu(data.Touristique.filter((e)=>e.name.includes(search)))).map((e)=><LCard key={e.id} id={e.id} nom={e.name} img={e.url} isReg={false}/>));
-
+  const [style, setStyle] = useState(backgrounds[Math.floor(Math.random() * 3)]);
   function tagfilterMonu(tag) {
     const def = defaultMonu
     def[`${tag}`] = !monuTags[`${tag}`]
@@ -72,9 +75,9 @@ function App() {
     setMonuList(filterForRegM(filterForMonu(data.Touristique.filter((e)=>e.name.includes(search)))).map((e)=><LCard key={e.id} id={e.id} nom={e.name} img={e.url} isReg={false}/>))
   }, [monuTags,regTags]);
   return (
-    <div className="top-container">
-      <h1 className="title-homepage">Quelle region voulez-vous découvrir ?</h1>
+    <div className="top-container" style={{background:`url(${style.url})`,backgroundSize:"cover"}}>
       <div className="element-top-container">
+      <h1 className="title-homepage">Quelle region voulez-vous découvrir ?</h1>
           <div className="search-input">
             <input className="filter-button" type="text" onChange={(e)=>textChange(e.target.value)}/>
             <div className="checkboxs-chimique">
