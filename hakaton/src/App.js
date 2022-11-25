@@ -105,8 +105,8 @@ function App() {
                 </form>
             </div>
           </div>
-          <h2 className="suggestions-title">Nos Suggestions</h2>
         </div>
+        <h2 className="suggestions-title">Nos Suggestions</h2>
         <div className="suggestions-container">
       <div className='region-img-container'>
       {regList}
