@@ -35,11 +35,13 @@
 .top-container h1{
     color: white;
 }
-.element-top-container{
+.element-top-container {
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
+    height: 50vh;
+    background-size: cover;
 }
 .filter-button{
 display: flex;
@@ -67,9 +69,12 @@ height: 20px;
     font-size: 30px;
     padding-bottom: 2rem;
     color: white;
-    text-shadow: 2px 4px 0px black;
+    text-shadow: 1px 2px 0px black;
     display: flex;
     align-items: center;
+    background-color: #f85151fa;
+    width: 100%;
+    justify-content: center;
 }
 
 .region-name{
@@ -81,7 +86,6 @@ height: 20px;
     border-radius: 20px;
 }
 .region-img{
-    margin-right: 7%;
     width: 80%;
     height: 20rem;
     padding-top: 1rem;
@@ -94,7 +98,8 @@ height: 20px;
 }
 .region-img:hover{
     margin-bottom: 20px;
-    box-shadow: -5px 10px 15px 0px #000000;
+    color: #f85151fa;
+    box-shadow: -4px 10px 15px 0px #000000;
     border: solid 1px grey;
 }
 .region-img-container{
@@ -115,6 +120,28 @@ height: 20px;
 .suggestions-container{
     width: 100%;
     color: white;
+}
+.sugg {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.squaretxt {
+    padding: 0.5rem;
+    background-color: #ffffff7d;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: grey solid 2px;
+    border-radius: 20px;
+}
+.sugg .sugText{
+    color: black;
+    margin-top: 15px;
+}
+.sugg .region-img{
+    margin-top: 10%;
+    margin-bottom: 33%;
 }
 @media (max-width: 767px) {
     .top-container h1{

@@ -21,7 +21,7 @@ function App() {
     Bretagne:3,
     ProvenceAlpesCoteDazur:4
   }
-  const backgrounds = [{color:"#e6ff99c",url:"https://www.vinsalsace.com/assets/img/wallpapers/400/2997-zinnkoepfle--copyrightzvardon-conseilvinsalsace__desktop_large.jpg"},
+  const backgrounds = [{color:"#e6ff99c",url:"https://cdn.discordapp.com/attachments/301685474257534977/1045669077403844739/pexels-pierre-blache-2901211.jpg"},
                     {color:"#fff7e6c",url:"https://media.discordapp.net/attachments/1045628698163937280/1045628966020587550/unknown.png?width=885&height=586"},
                     {color:"#ccffddc",url:"https://media.discordapp.net/attachments/1045628698163937280/1045629065530449980/unknown.png?width=885&height=589"}]
   const [search, setSearch] = useState("");
@@ -70,13 +70,24 @@ function App() {
     }
     return result
   }
+  function suggestion(par1,par2) {
+    if(par1.length===0 &&par2.length===0){
+      return (<div className='sugg'>
+        <div className='squaretxt'>
+        <h3 className='sugText'>Nous n'avons pas trouve ce que vous cherchiez</h3>
+        <h3 className='sugText'>Voici notre suggestion:</h3>
+        </div>
+        <LCard id={data.Region[1].id} nom={data.Region[1].name} img={data.Region[1].url} isReg={true}/>
+      </div>)
+    }
+  }
   useEffect(() => {
     setRegList(filterForMonu(filterForReg(data.Region.filter((e)=>e.name.includes(search)))).map((e)=><LCard key={e.id} id={e.id} nom={e.name} img={e.url} isReg={true}/>))
     setMonuList(filterForRegM(filterForMonu(data.Touristique.filter((e)=>e.name.includes(search)))).map((e)=><LCard key={e.id} id={e.id} nom={e.name} img={e.url} isReg={false}/>))
-  }, [monuTags,regTags]);
+  }, [monuTags,regTags,search]);
   return (
     <div className="top-container" style={{background:`url(${style.url})`,backgroundSize:"cover"}}>
-      <div className="element-top-container">
+      <div className="element-top-container" style={{background:`url(${style.url})`,backgroundSize:"cover"}}>
       <h1 className="title-homepage">Quelle region voulez-vous découvrir ?</h1>
           <div className="search-input">
             <input className="filter-button" type="text" onChange={(e)=>textChange(e.target.value)}/>
@@ -111,6 +122,7 @@ function App() {
       <div className='region-img-container'>
       {regList}
         {monuList}
+        {suggestion(monuList,regList)}
       </div>
       </div>
     </div>

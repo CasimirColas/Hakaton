@@ -10,19 +10,19 @@ const data = {
       id: 2,
       name: "IleDeFrance",
       url: "https://france3-regions.francetvinfo.fr/image/6tid-aN2WJ9Qza7vDLx-1B39z6c/600x400/regions/2020/06/09/5edee828a203a_maxstockfr242287.jpg",
-      des: "Si l'histoire et la culture vous passionne, vous allez être gâté durant votre séjour en Île-de-France. Cette région est riche en histoire et en culture comme en témoigne ses nombreux châteaux et monuments. Parmi les plus important, il y a le célèbre château de Versailles. C'est l'un des monuments phares de la France.",
+      desc: "Si l'histoire et la culture vous passionne, vous allez être gâté durant votre séjour en Île-de-France. Cette région est riche en histoire et en culture comme en témoigne ses nombreux châteaux et monuments. Parmi les plus important, il y a le célèbre château de Versailles. C'est l'un des monuments phares de la France.",
     },
     {
       id: 3,
       name: "Bretagne",
       url: "https://france3-regions.francetvinfo.fr/image/wPbY0-OUScDFVuEHdnGBMFYzxUE/600x400/regions/2020/06/09/5edf4332a367a_saint_mathieu_avec_les_armeries_yann_quiviger-3215501.jpg",
-      des: "La Bretagne possède de nombreux atouts : une attractivité touristique forte et des patrimoines remarquables et variés (églises et chapelles, mégalithes, héritages maritimes, biens archéologiques, canaux et voies d’eaux intérieures…)",
+      desc: "La Bretagne possède de nombreux atouts : une attractivité touristique forte et des patrimoines remarquables et variés (églises et chapelles, mégalithes, héritages maritimes, biens archéologiques, canaux et voies d’eaux intérieures…)",
     },
     {
       id: 4,
       name: "ProvenceAlpesCoteDazur",
       url: "https://c4.wallpaperflare.com/wallpaper/527/797/316/buildings-coast-cote-d-039-azur-wallpaper-preview.jpg",
-      des: "Une vaste région, comme le laisse supposer son nom à rallonge. Le PACA regroupe quelques-unes des régions les plus attractives de France, que ce soit pour le soleil, la mer, la gastronomie, la nature... Il y a la Provence, ses villages, sa garrigue et ses accents chantants, la Côte d'Azur, ses stations balnéaires, ses paillettes et ses îles, et les Alpes du Sud, leurs parcs naturels et ce littoral découpé et spectaculaire : une vaste région que le PACA, mais aussi un vrai dépaysement dans son propre pays !",
+      desc: "Une vaste région, comme le laisse supposer son nom à rallonge. Le PACA regroupe quelques-unes des régions les plus attractives de France, que ce soit pour le soleil, la mer, la gastronomie, la nature... Il y a la Provence, ses villages, sa garrigue et ses accents chantants, la Côte d'Azur, ses stations balnéaires, ses paillettes et ses îles, et les Alpes du Sud, leurs parcs naturels et ce littoral découpé et spectaculaire : une vaste région que le PACA, mais aussi un vrai dépaysement dans son propre pays !",
     },
   ],
   Touristique: [

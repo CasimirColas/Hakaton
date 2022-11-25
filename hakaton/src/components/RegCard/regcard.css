@@ -35,5 +35,23 @@
 .monumentsList {
     max-width: 90%;
     max-height: 40%;
-    overflow: scroll;
+    overflow-x: scroll;
+    display: flex;
+    margin-bottom: 2rem;
+}
+.microMonu {
+    border-radius: 20px;
+    margin-inline: 1rem;
+    min-width: 8rem;
+    height: 8rem;
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.textmicromonu {
+    font-size: 15px;
+    color: white;
+    display: flex;
+    text-align: center;
 }
