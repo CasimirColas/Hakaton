@@ -26,7 +26,7 @@ const LCard = ({id,nom,img, isReg}) => {
         }
     }
     return (
-        <div className='region-img' style={{background: `url(${img})`,pointerEvents: pointerEv}} onClick={clickOpen}>
+        <div className='region-img' style={{background: `url(${img})`,pointerEvents: pointerEv,backgroundSize:"cover"}} onClick={clickOpen}>
             <h3>{nom}</h3>
             {onDisplay()}
         </div>
