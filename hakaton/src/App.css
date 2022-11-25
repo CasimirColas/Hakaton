@@ -4,70 +4,77 @@
     box-sizing: border-box;
     font-family: 'Noto Sans', sans-serif;
 }
+
 /*index.html*/
 /*top container*/
 
-.title-homepage{
+.title-homepage {
     margin-top: 5%;
 }
+
 .grid-button {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(4, 1fr);
     grid-column-gap: 0px;
     grid-row-gap: 0px;
-    }
-.checkboxs-chimique{
+}
+
+.checkboxs-chimique {
     display: flex;
     gap: 55px;
     color: white;
     justify-content: center;
     border: solid white 4px;
     border-radius: 10px;
-        padding: 20px;
+    padding: 20px;
 }
-.top-container{
+
+.top-container {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background: linear-gradient(
-        rgba(0, 0, 0, 0.45), 
-        rgba(0, 0, 0, 0.45)
-      ),url(http://placekitten.com/200/300);
-      background-size:cover;
+    background: linear-gradient(rgba(0, 0, 0, 0.45),
+            rgba(0, 0, 0, 0.45)), url(http://placekitten.com/200/300);
+    background-size: cover;
 }
-.top-container h1{
+
+.top-container h1 {
     color: white;
 }
-.element-top-container{
+
+.element-top-container {
     display: flex;
     flex-direction: column;
     align-items: center;
-    
-}
-.filter-button{
-display: flex;
-flex-direction: row;
-margin-top: 1rem;
-margin-bottom: 1rem;
-border-radius: 50px;
-}
-.double-buttons{
-width:100%;
-height: 20px;
-}
-.search-input h1{
-    color: white;
-}  
 
-.filter-button{
+}
+
+.filter-button {
+    display: flex;
+    flex-direction: row;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 50px;
+}
+
+.double-buttons {
+    width: 100%;
+    height: 20px;
+}
+
+.search-input h1 {
+    color: white;
+}
+
+.filter-button {
     width: 100%;
 }
 
 /*fin top container*/
 /*Suggestions part*/
-.suggestions-title{
+.suggestions-title {
     padding-left: 10%;
     padding-top: 3rem;
     font-size: 30px;
@@ -76,55 +83,62 @@ height: 20px;
     text-shadow: 2px 4px 0px black;
 }
 
-.region-name{
+.region-name {
     padding-left: 10%;
     padding-top: 1rem;
     font-size: 25px;
 }
-.region-img{
+
+.region-img {
     margin-right: 7%;
     width: 80%;
     height: 20rem;
     padding-top: 1rem;
-    background-size: cover ;
+    background-size: cover;
     border: solid 1px white;
-    text-shadow: 2px 4px 0px black;
 }
-.region-img:hover{
+
+.region-img:hover {
     margin-bottom: 20px;
     box-shadow: -5px 10px 15px 0px #000000;
     border: solid 1px grey;
 }
-.region-img-container{
+
+.region-img-container {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding-bottom: 1rem;  
-    gap: 2rem;;
+    padding-bottom: 1rem;
+    gap: 2rem;
+    padding-right: 2rem;
     background-color: #8787875c;
     padding-top: 3%;
 }
-.region-img-container div{
+
+.region-img-container div {
     padding-top: 2rem;
     padding-left: 2rem;
-    font-size: 25px;
 }
-.suggestions-container{
+
+.suggestions-container {
     width: 100%;
     color: white;
 }
+
 @media (max-width: 767px) {
-    .top-container h1{
-        font-size: 15px ;
-        font-weight:bolder;
- }
+    .top-container h1 {
+        font-size: 15px;
+        font-weight: bolder;
+    }
 }
-@media (min-width: 767px) {
- }
-form h3{
+
+@media (min-width: 767px) {}
+
+form h3 {
     margin-bottom: 10px;
 }
+
 form label {
     margin-left: 10px;
 }
