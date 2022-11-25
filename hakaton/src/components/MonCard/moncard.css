@@ -21,12 +21,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-}
-
-.imgMonument {
-    max-height: 70%;
-    margin-top: 2em;
-    margin-bottom: 2em;
+    z-index: 750;
 }
 
 .cardDesc {
