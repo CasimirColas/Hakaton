@@ -81,6 +81,9 @@ height: 20px;
     padding-top: 1rem;
     font-size: 25px;
 }
+.regCard{
+    border-radius: 20px;
+}
 .region-img{
     margin-right: 7%;
     width: 80%;
@@ -106,8 +109,6 @@ height: 20px;
     padding-top: 3%;
 }
 .region-img-container div{
-    padding-top: 2rem;
-    padding-left: 2rem;
     font-size: 25px;
 }
 .suggestions-container{

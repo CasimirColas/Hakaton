@@ -2,7 +2,8 @@
     position: absolute;
     width: 90vw;
     height: 90vh;
-    background-color: blue;
+    background-color:#fdf1b8;   
+    ;
     left:0;
     right:0;
     top: 5vh;
@@ -17,5 +18,14 @@
 .monumentsList {
     max-width: inherit;
     max-height: 40%;
-    overflow: scroll;
+    overflow-x: scroll;
+    display: flex;
+}
+h3{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+p{
+    margin-inline: 3rem;
 }
