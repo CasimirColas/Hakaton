@@ -90,10 +90,11 @@ height: 20px;
 }
 .region-img h3 {
     margin-left: 2rem;
+    overflow: hidden;
 }
 .region-img:hover{
     margin-bottom: 20px;
-    color: yellowgreen;
+    color: #f85151fa;
     box-shadow: -4px 10px 15px 0px #000000;
     border: solid 1px grey;
 }
@@ -110,7 +111,7 @@ height: 20px;
 .region-img-container div{
     padding-top: 2rem;
     padding-left: 2rem;
-    font-size: 25px;
+    font-size: 100%;
 }
 .suggestions-container{
     width: 100%;
@@ -137,6 +138,15 @@ height: 20px;
 .sugg .region-img{
     margin-top: 10%;
     margin-bottom: 33%;
+}
+button {
+    position: relative;
+    height: 60px;
+    width: 60px;
+    border-radius: 50px;
+    font: 100%;
+    bottom: 5%;
+    right: 55%;
 }
 @media (max-width: 767px) {
     .top-container h1{
